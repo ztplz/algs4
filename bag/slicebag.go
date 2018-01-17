@@ -1,5 +1,6 @@
 package bag
 
+// 切片实现背包
 type slicebag struct {
 	items []interface{}
 }
