@@ -7,7 +7,13 @@ import (
 )
 
 func main() {
-	bag := bag.NewSliceBag()
+	sbag := bag.NewSliceBag()
 
-	fmt.Println(bag.Size())
+	sbag.Add("asgasgd")
+	sbag.Add("asgasgd")
+	sbag.Add("asgasgd")
+	sbag.Add("asgasgd")
+
+	sbag.Add("asgasgd")
+	fmt.Println(sbag.Size())
 }

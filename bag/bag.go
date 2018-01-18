@@ -11,3 +11,10 @@ func NewSliceBag() Bag {
 		items: make([]interface{}, 0),
 	}
 }
+
+func NewLinkBag() Bag {
+	return &linkbag{
+		len:   0,
+		first: nil,
+	}
+}
