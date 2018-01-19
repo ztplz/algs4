@@ -23,6 +23,7 @@ func (sq *slicequeue) Dequeue() (interface{}, error) {
 	}
 
 	item = sq.items[0]
+	sq.items[0] = nil
 	sq.items = sq.items[1:]
 
 	return item, nil
